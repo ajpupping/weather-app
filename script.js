@@ -6,8 +6,8 @@ var country = country;
 // for testing
 city = 'san diego'
 
-var weatherQueryURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + APIKey;
-var geoQueryURL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=' + 5 + '&appid=' + APIKey;
+var weatherQueryURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + APIKey;
+var geoQueryURL = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=' + 5 + '&appid=' + APIKey;
 
 function getGeoCode() {
     fetch(geoQueryURL)
