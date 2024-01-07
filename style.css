@@ -5,3 +5,17 @@
 .container {
     margin:2%;
 }
+
+header {
+    background-color: rgb(81, 167, 167);
+    color: white;
+}
+
+#five-day-forecast {
+    display: flex;
+}
+
+.forecast-card {
+    background-color: rgb(18, 49, 134);
+    color: white;
+}
