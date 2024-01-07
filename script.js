@@ -51,7 +51,18 @@ function getWeather(weatherQueryURL) {
     fetch(weatherQueryURL)
         .then(function(response) { return response.json() })
         .then(function(data) {
-            console.log(data);
+            console.long(data)
+            displayCurrentWeather(data);
+        }).catch(function(){
+
         });
 }
 
+function displayCurrentWeather(data) {
+
+    document.getElementById('location').innerHTML = data[0].name;
+    document.getElementById('current-temperature').innerHTML = data.main.temp;
+    document.getElementById('current-wind').innerHTML = data.wind.speed;
+    document.getElementById('current-humidity').innerHTML = data.main.humidity;
+
+}
